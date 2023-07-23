@@ -6,6 +6,7 @@ let apiData = {
 }
 
 function fetchData() {
+    
     let countryValue = inputElem.value;
 
     fetch(`${apiData.url}${countryValue}&&appid=${apiData.key}`)
@@ -14,6 +15,7 @@ function fetchData() {
             showData(data);
             inputElem.value = '';
         });
+
 }
 
 function showData (data) {
